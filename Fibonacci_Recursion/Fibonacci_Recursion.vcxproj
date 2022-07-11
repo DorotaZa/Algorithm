@@ -24,6 +24,7 @@
     <ProjectGuid>{13e7eb59-d11b-4d57-b344-1baa537205c7}</ProjectGuid>
     <RootNamespace>FibonacciRecursion</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>FibonacciRecursionFunction</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
