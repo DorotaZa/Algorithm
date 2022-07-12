@@ -104,6 +104,11 @@ void Vector::insert(int value, unsigned int index)
 	++_size;
 }
 
+void Vector::clear()
+{
+	_size = 0;
+}
+
 void Vector::remove(unsigned int index)
 {
 	if (index > _size)
@@ -117,11 +122,6 @@ void Vector::remove(unsigned int index)
 	--_size;
 }
 
-void Vector::clear()
-{
-	_size = 0;
-}
-
 void Vector::remove(unsigned int from, unsigned int to)
 {
 	unsigned int length = to - from;
@@ -129,8 +129,9 @@ void Vector::remove(unsigned int from, unsigned int to)
 	for (unsigned int i = from; i < to; ++i)
 	{
 		_data[i] = _data[i + length]; //zachowuwjemy capacity; TUTAJ MI SIE WYSYPUJE; POWTARZA WARTOSCI LENGTH ON REPEAT
+		--_size;
 	}
-	--_size;
+	
 }
 
 void Vector::bubble_sort()
@@ -164,6 +165,10 @@ void Vector::pop_back()
 		_data[i] = _data[i+1];
 	}
 	--_size;
+}
+
+void Vector::copyTo(Vector& other, unsigned int index)
+{
 }
 
 int& Vector::operator[](unsigned int index) //

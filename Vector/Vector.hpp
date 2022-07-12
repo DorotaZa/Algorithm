@@ -28,10 +28,10 @@ public:
 	void remove(unsigned int from, unsigned int to); //usuwa wiele wartosci z wektora from to
 	void bubble_sort(); //sortowanie za pomoca algorytmu sortowania babelkowego
 	void pop_back(); //usuwa ostani elelement
-	//void copyTo(Vector& other, unsigned int index); //skopiuj zawartosc wektora other w podane miejsce 
+	void copyTo(Vector& other, unsigned int index); //skopiuj zawartosc wektora other w podane miejsce 
 
 	int& operator[](unsigned int index); //operator dostepu do danych na podanej pozycji
-	Vector& operator=(const Vector& other); //to samo co konstruktor kopiujacy
+	Vector& operator=(const Vector& other); //to samo co konstruktor kopiujacy, ale moze przypisac wartosci do juz istniejacego obeiktu; k.kopiujacy tworzy nowy obiekt
 
 };
 

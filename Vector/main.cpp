@@ -50,6 +50,16 @@ int main()
 
     std::cout << std::endl;
 
+    //bubble sort
+    vector.bubble_sort();
+    std::cout << "Bubble_sort function:" << std::endl;
+    for (unsigned int i = 0; i < vector.size(); ++i)
+    {
+
+        std::cout << "[" << i << "] = " << vector[i] << std::endl;
+    }
+    std::cout << std::endl;
+
     //remove
     vector.remove(0);
     std::cout << "Remove function:" << std::endl;
@@ -60,19 +70,10 @@ int main()
     }
     std::cout << std::endl;
 
-    //bubble sort
-    vector.bubble_sort();
-    std::cout << "Bubble_sort function:" << std::endl;
-    for (unsigned int i = 0; i < vector.size(); ++i)
-    {
-        
-        std::cout << "[" << i << "] = " << vector[i] << std::endl;
-    }
-    std::cout << std::endl;
 
     //remove overloaded
     vector.remove(1, 3);
-    std::cout << "Remove overloaded 'from_to' function:" << std::endl;
+    std::cout << "Remove overloaded function from index 1 to index 3:" << std::endl;
     for (unsigned int i = 0; i < vector.size(); ++i)
     {
        
